@@ -1,0 +1,11 @@
+*
+!*.py
+!*.md
+!*.txt
+!*.jpg
+!requirements*
+!Dockerfile*
+!*.sh
+convert.py
+randomColor.py
+train.py
