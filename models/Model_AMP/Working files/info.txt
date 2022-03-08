@@ -1,0 +1,75 @@
+General Info:
+
+Options which are available as an example :
+
+[0] Autobackup every N hour ( 0..24 ?:help ) :
+0
+[n] Write preview history ( y/n ?:help ) :
+n
+[0] Target iteration :
+0
+[n] Flip SRC faces randomly ( y/n ?:help ) :
+n
+[n] Flip DST faces randomly ( y/n ?:help ) :
+n
+[4] Batch_size ( ?:help ) :
+4
+[0.33] Morph factor. ( 0.1 .. 0.5 ?:help ) :
+0.33
+[y] Masked training ( y/n ?:help ) :
+y
+[n] Eyes and mouth priority ( y/n ?:help ) :
+n
+[n] Uniform yaw distribution of samples ( y/n ?:help ) :
+n
+[y] Place models and optimizer on GPU ( y/n ?:help ) :
+y
+[n] Use AdaBelief optimizer? ( y/n ?:help ) :
+n
+[n] Use learning rate dropout ( n/y/cpu ?:help ) :
+n
+[MS-SSIM] Loss function ( SSIM/MS-SSIM/MS-SSIM+L1 ?:help ) :
+MS-SSIM
+[y] Enable random warp of samples ( y/n ?:help ) :
+y
+[n] Enable random downsample of samples ( y/n ?:help ) :
+n
+[n] Enable random noise added to samples ( y/n ?:help ) :
+n
+[n] Enable random blur of samples ( y/n ?:help ) :
+n
+[n] Enable random jpeg compression of samples ( y/n ?:help ) :
+n
+[3] GAN version ( 2 or 3 ?:help ) :
+3
+[0.0] GAN power ( 0.0 .. 1.0 ?:help ) : 0.1
+0.1
+[64] GAN patch size ( 3-640 ?:help ) :
+64
+[16] GAN dimensions ( 4-64 ?:help ) :
+16
+[0.1] GAN label smoothing ( 0 - 0.5 ?:help ) :
+0.1
+[0.0] GAN noisy labels ( 0 - 0.5 ?:help ) :
+0.0
+[0.0] Background power ( 0.0..1.0 ?:help ) :
+0.0
+[none] Color transfer for src faceset ( none/rct/lct/mkl/idt/sot/fs-aug ?:help ) :
+none
+[n] Random color ( y/n ?:help ) :
+n
+[n] Enable gradient clipping ( y/n ?:help ) :
+n
+[n] Enable pretraining mode ( y/n ?:help ) :
+
+
+
+Model_All_In_One.py is the default to be used.
+
+Model_Pretraining_To_Main.py is the same as Model_All_In_One.py but the difference is it doesn't reset the iterations number when you switch from pretraining to main training.
+
+Note: Rename the file you want to use as Model.py and copy to _internal\DeepFaceLab\models\Model_AMP
+
+
+
+
